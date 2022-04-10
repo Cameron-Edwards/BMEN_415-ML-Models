@@ -49,9 +49,9 @@ pixel_plot = plt.figure()
 # print(y_train.shape)
 
 
-x_test, y_test_a = ImportData("C:/Users/camer/Documents/BMEN 415/Final Project/ImageDataset/chest_xray/test",200)
-x_val, y_val_a = ImportData("C:/Users/camer/Documents/BMEN 415/Final Project/ImageDataset/chest_xray/val",200)
 
+x_val, y_val_a = ImportData("C:/Users/camer/Documents/BMEN 415/Final Project/ImageDataset/chest_xray/val",200)
+x_test, y_test_a = ImportData("C:/Users/camer/Documents/BMEN 415/Final Project/ImageDataset/chest_xray/test",200)
 
 y_train = np_utils.to_categorical(y_train, 2)
 y_test = np_utils.to_categorical(y_test_a, 2)
